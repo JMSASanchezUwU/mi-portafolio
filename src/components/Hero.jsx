@@ -22,7 +22,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1, duration: 1 }}
       >
-        Desarrollador Web | Diseñador UI/UX
+        Aquí encontrarás información sobre mí y mis proyectos
       </motion.p>
     </motion.section>
   );
