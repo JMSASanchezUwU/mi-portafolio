@@ -5,21 +5,24 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 const projects = [
   {
     id: 1,
-    title: 'Sistema de Gestión de Inventarios',
-    description: 'Desarrollé un sistema de inventarios utilizando React y .NET para una empresa local.',
-    technologies: ['React', '.NET', 'SQL Server'],
+    title: 'Biblioteca Digital',
+    description: 'Plataforma que permite a los usuarios gestionar préstamos de libros y a los administradores realizar un CRUD completo de libros y préstamos. Integra APIs de noticias, YouTube y streaming.',
+    technologies: ['Angular', 'Firebase', 'Node.js', 'Express', 'APIs externas'],
+    url: 'https://bibliotecagalaxy.web.app/libros',
   },
   {
     id: 2,
-    title: 'Aplicación Móvil de Tareas',
-    description: 'Creé una aplicación móvil multiplataforma para gestión de tareas usando Flutter y Firebase.',
-    technologies: ['Flutter', 'Firebase'],
+    title: 'E-commerce con PayPal',
+    description: 'Sistema de comercio electrónico que permite a los usuarios comprar productos y pagar con PayPal. Los administradores gestionan proveedores y aprueban compras.',
+    technologies: ['Angular', 'Node.js', 'Express', 'MongoDB', 'PayPal API'],
+    url: null,
   },
   {
     id: 3,
-    title: 'API REST para E-commerce',
-    description: 'Implementé una API RESTful utilizando Spring Boot y MongoDB para una plataforma de comercio electrónico.',
-    technologies: ['Spring Boot', 'MongoDB'],
+    title: 'CRUD de Administración de Usuarios',
+    description: 'Sistema de administración de usuarios con funcionalidades CRUD. Permite gestionar usuarios de manera eficiente, con validaciones y roles de acceso.',
+    technologies: ['Angular', 'Node.js', 'Express', 'MongoDB' , 'MySql'],
+    url: null,
   },
 ];
 
@@ -39,6 +42,16 @@ const Projects = () => {
                 </span>
               ))}
             </div>
+            {project.url && (
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                Ver Proyecto
+              </a>
+            )}
           </div>
         ))}
       </Carousel>

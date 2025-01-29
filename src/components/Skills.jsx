@@ -18,14 +18,16 @@ const Skills = () => {
 
   return (
     <section id="skills" className="skills">
-      <h2>Habilidades Técnicas</h2>
-      <div className="skills-grid">
-        {skills.map((skill, index) => (
-          <div key={index} className="skill-card">
-            <div className="skill-icon">{skill.icon}</div>
-            <p>{skill.name}</p>
-          </div>
-        ))}
+      <div className="skills-container">
+        <h2>Habilidades Técnicas</h2>
+        <div className="skills-grid">
+          {skills.map((skill, index) => (
+            <div key={index} className="skill-card">
+              <div className="skill-icon">{skill.icon}</div>
+              <p className="skill-name">{skill.name}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
